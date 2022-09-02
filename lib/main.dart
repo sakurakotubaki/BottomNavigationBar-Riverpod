@@ -37,8 +37,7 @@ class ScreenContainer extends ConsumerWidget {
     // ref.watchで変数の状態の変化を監視する。
     final tabType = ref.watch(tabTypeProvider.state);
     // List型で画面遷移先のページを定義する。
-    // 参考にしたコードは、final _screensと書かれていた!
-    List<StatelessWidget> _screens = [
+    List<Widget> _screens = [
       HomeScreen(),
       MapScreen(),
       ProfileScreen(),
